@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'pages/login.dart';
 void main() {
   runApp(const MyApp());
 }
@@ -9,6 +9,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      home: const LoginPage(),
+      /*
       debugShowCheckedModeBanner: false,
       title: 'Inventory Management',
         theme: ThemeData(
@@ -22,7 +24,7 @@ class MyApp extends StatelessWidget {
             icon: Icon(Icons.menu),
             color: Color(0xFFFFFFFF),
             tooltip: 'Navigation menu',
-            onPressed: () {} , // null disables the button
+            onPressed: () {} ,
           ),
           backgroundColor: const Color(0xFF4285F4),
           title: Text('Inventory Management',style: TextStyle(color: Color(0xFFFFFFFF)),),
@@ -35,8 +37,15 @@ class MyApp extends StatelessWidget {
                 Text('- author', style: TextStyle(fontSize: 20)),
               ]
           ),
-        )
+        ),
+        floatingActionButton: FloatingActionButton.extended(
+          onPressed: () {},
+          icon: const Icon(Icons.add),
+          label: const Text('Add New Product'),
+          backgroundColor: Colors.green,
+        ),
       ),
+       */
     );
   }
 }
